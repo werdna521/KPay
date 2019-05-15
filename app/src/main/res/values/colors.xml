@@ -6,4 +6,6 @@
     <color name="background">#eeeeee</color>
     <color name="textColorPrimary">#4b2c20</color>
     <color name="textColorClickable">#00bcd4</color>
+    <color name="white">#ffffff</color>
+    <color name="balanceColor">#388e3c</color>
 </resources>
