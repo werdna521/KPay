@@ -43,16 +43,7 @@ public class RegisterFragment extends Fragment {
         mRepeatPasswordInputLayout = view.findViewById(R.id.reg_repeat_password_input_layout);
         mPasswordInputLayout = view.findViewById(R.id.reg_password_input_layout);
         mUsernameInputLayout = view.findViewById(R.id.reg_username_input_layout);
-        mCancelButton = view.findViewById(R.id.cancel_button);
         mRegisterButton = view.findViewById(R.id.sign_up_button);
-
-        // set cancel button listener
-        mCancelButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((NavigationHost)getActivity()).navigateTo(new LoginFragment(), false, true);
-            }
-        });
 
         // set register button listener
         mRegisterButton.setOnClickListener(new View.OnClickListener() {

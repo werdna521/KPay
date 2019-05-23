@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:padding="24dp"
-    android:background="@color/background"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
 
     <LinearLayout
-        android:layout_marginTop="52dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="100dp">
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal">
 
         <ImageView
-            android:layout_marginTop="60dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/k_logo"/>
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/k_logo" />
 
         <TextView
-            android:layout_marginTop="70dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="75sp"
+            android:layout_marginTop="70dp"
+            android:text="@string/pay_label"
             android:textColor="@color/colorPrimaryDark"
-            android:text="@string/pay_label"/>
+            android:textSize="75sp" />
     </LinearLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -35,14 +35,14 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="8dp"
         android:hint="@string/username_label"
-        app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
-        app:hintTextColor="@color/colorPrimary"
+        android:paddingBottom="8dp"
         app:boxStrokeColor="@color/colorPrimary"
-        app:counterMaxLength="25"
         app:counterEnabled="true"
-        app:errorEnabled="true">
+        app:counterMaxLength="25"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        app:hintTextColor="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/reg_username_edit_text"
@@ -57,20 +57,20 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="8dp"
         android:hint="@string/password_label"
-        app:passwordToggleEnabled="true"
+        android:paddingBottom="8dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:errorEnabled="true"
         app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
         app:hintTextColor="@color/colorPrimary"
-        app:boxStrokeColor="@color/colorPrimary"
-        app:errorEnabled="true">
+        app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/reg_password_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:maxLines="1"/>
+            android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -78,12 +78,12 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="8dp"
         android:hint="@string/repeat_password_label"
+        android:paddingBottom="8dp"
+        app:boxStrokeColor="@color/colorPrimary"
         app:errorEnabled="true"
         app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
         app:hintTextColor="@color/colorPrimary"
-        app:boxStrokeColor="@color/colorPrimary"
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -91,7 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:maxLines="1"/>
+            android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
@@ -99,7 +99,7 @@
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/sign_up_label"
         android:textColor="@color/textColorPrimary"
-        android:textSize="16sp"
-        android:text="@string/sign_up_label"/>
+        android:textSize="16sp" />
 </LinearLayout>
